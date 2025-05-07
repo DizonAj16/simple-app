@@ -1,0 +1,14 @@
+{
+    "name": "simple-gui-node-app",
+    "version": "1.0.0",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js",
+      "test": "node test.js",
+      "deploy": "echo App deployed!"
+    },
+    "dependencies": {
+      "express": "^4.18.2"
+    }
+  }
+  
