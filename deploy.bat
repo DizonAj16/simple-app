@@ -1,10 +1,7 @@
-echo Deploying app...
-copy index.html build\index.html
-
-if exist build\index.html (
-    echo Deployment successful.
-    start "" "build\index.html"
-) else (
-    echo Deployment failed. index.html not found.
-    exit /b 1
+@echo off
+set "DEPLOY_DIR=C:\deployed-app"
+if not exist %DEPLOY_DIR% (
+    mkdir %DEPLOY_DIR%
 )
+xcopy build\* %DEPLOY_DIR%\ /Y /I
+echo Deployed to %DEPLOY_DIR%\index.html
