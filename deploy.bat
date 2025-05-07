@@ -4,4 +4,4 @@ if not exist %DEPLOY_DIR% (
     mkdir %DEPLOY_DIR%
 )
 xcopy build\* %DEPLOY_DIR%\ /Y /I
-echo Deployed to %DEPLOY_DIR%
+echo Deployed to %DEPLOY_DIR%\index.html
